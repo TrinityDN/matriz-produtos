@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400&family=PT+Sans+Narrow&family=Rubik:wght@300;400&family=Signika+Negative:wght@300&display=swap');body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/img/fundo.jpg");
+    color: #000;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    font-size: 250%;
+}
+
+div{
+    padding: 2%;
+    font-family: 'Fira Sans Condensed', sans-serif;    font-size: 140%;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    background-color: #fff;
+    gap: 5%;
+    width: 40%;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+@keyframes float{
+	0%,100%{
+		
+		transform:translatey(0)
+	}
+	50%{
+	
+		transform:translatey(-20px)
+	}
+}
+
+img{
+    border-radius: 3px;
+    animation: float 9s ease-in-out infinite;
+}
+
+#principal{
+    border: none;
+    transition: 0;
+    box-shadow: none;
+    width: 22%;
+    height: 10%;
+    align-items: center;
+    animation: none;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+p{
+    margin-top: 8%;
+   color: #000;
+   width: 29%;
+   word-wrap: break-word;
+   font-size: 112%;
+}
+
+button{
+    width: 30%;
+    height: 40px;
+    margin-top: 170px;
+    background-color: rgba(122, 68, 209, 0.541);
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    transition: 800ms;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 300ms;
+    width: 32%;
+    height: 42px;
+    box-shadow: 1px 2px 9px #1e1ef88f;
+    
+}
+
+@media screen and (max-width: 1110px) {
+    button{
+        margin-left: -20%;
+    }
+}
+
+@media screen and (max-width: 915px){
+    button{
+        margin-left: -35%;
+    }
+    div{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    img{
+        width: 40%;
+        height: 10%;
+    }
+    div{
+        width: 90%;
+        margin-bottom: 2%;
+    }
+    #principal{
+        width: 45%;
+    }   
+    @keyframes float{
+        0%,100%{
+            
+            transform:translatey(0)
+        }
+        50%{
+        
+            transform:translatey(-10px)
+        }
+    }
+    img{
+        border-radius: 3px;
+        animation: float 5s ease-in-out infinite;
+    }
+}
